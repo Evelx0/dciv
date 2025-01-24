@@ -520,16 +520,6 @@ export const MyBots = observer(() => {
                 action="chevron">
                 <Text id="app.settings.pages.bots.create_bot" />
             </CategoryButton>
-            <h5>
-                By creating a bot, you are agreeing to the {` `}
-                <a
-                    href="https://revolt.chat/aup"
-                    target="_blank"
-                    rel="noreferrer">
-                    Acceptable Usage Policy
-                </a>
-                .
-            </h5>
             <hr />
             <h3>
                 <Text id="app.settings.pages.bots.title" />
