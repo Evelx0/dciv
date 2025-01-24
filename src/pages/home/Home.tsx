@@ -110,33 +110,6 @@ export default observer(() => {
                             <img src={wideSVG} />
                         </h3>
                         <div className={styles.actions}>
-                            <a
-                                onClick={() =>
-                                    modalController.push({
-                                        type: "create_group",
-                                    })
-                                }>
-                                <CategoryButton
-                                    action="chevron"
-                                    icon={<PlusCircle size={32} />}
-                                    description={
-                                        <Text id="app.home.group_desc" />
-                                    }>
-                                    <Text id="app.home.group" />
-                                </CategoryButton>
-                            </a>
-                            <Link to="/discover">
-                                <a>
-                                    <CategoryButton
-                                        action="chevron"
-                                        icon={<Compass size={32} />}
-                                        description={
-                                            <Text id="app.home.discover_desc" />
-                                        }>
-                                        <Text id="app.home.discover" />
-                                    </CategoryButton>
-                                </a>
-                            </Link>
 
                             {client.servers.get(
                                 "01F7ZSBSFHQ8TA81725KQCSDDP",
@@ -146,9 +119,9 @@ export default observer(() => {
                                         action="chevron"
                                         icon={<RightArrowCircle size={32} />}
                                         description={
-                                            <Text id="app.home.goto-testers_desc" />
+                                            <Text id="">Description of Server</Text>
                                         }>
-                                        <Text id="app.home.goto-testers" />
+                                        <Text id="">Server Name</Text>
                                     </CategoryButton>
                                 </Link>
                             ) : (
@@ -157,36 +130,12 @@ export default observer(() => {
                                         action="chevron"
                                         icon={<Group size={32} />}
                                         description={
-                                            <Text id="app.home.join-testers_desc" />
+                                            <Text id="">Description of Server</Text>
                                         }>
-                                        <Text id="app.home.join-testers" />
+                                        <Text id="">Server Name</Text>
                                     </CategoryButton>
                                 </Link>
                             )}
-
-                            <Link to="/settings/feedback">
-                                <CategoryButton
-                                    action="chevron"
-                                    icon={<Megaphone size={32} />}
-                                    description={
-                                        <Text id="app.home.feedback_desc" />
-                                    }>
-                                    <Text id="app.home.feedback" />
-                                </CategoryButton>
-                            </Link>
-                            <a
-                                href="https://wiki.revolt.chat/notes/project/financial-support/"
-                                target="_blank"
-                                rel="noreferrer">
-                                <CategoryButton
-                                    action="external"
-                                    description={
-                                        <Text id="app.home.donate_desc" />
-                                    }
-                                    icon={<Money size={32} />}>
-                                    <Text id="app.home.donate" />
-                                </CategoryButton>
-                            </a>
                             <Link to="/settings">
                                 <CategoryButton
                                     action="chevron"

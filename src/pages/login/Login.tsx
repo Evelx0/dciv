@@ -1,4 +1,4 @@
-import { Twitter, Github, Mastodon } from "@styled-icons/boxicons-logos";
+import { Github } from "@styled-icons/boxicons-logos";
 import { observer } from "mobx-react-lite";
 import { Helmet } from "react-helmet";
 import { Link, Route, Switch } from "react-router-dom";
@@ -103,49 +103,8 @@ export default observer(() => {
                                     rel="noreferrer">
                                     <Github size={24} />
                                 </a>
-                                <a
-                                    href="https://twitter.com/revoltchat"
-                                    target="_blank"
-                                    rel="noreferrer">
-                                    <Twitter size={24} />
-                                </a>
-                                <a
-                                    href="https://mastodon.social/@revoltchat"
-                                    target="_blank"
-                                    rel="noreferrer">
-                                    <Mastodon size={24} />
-                                </a>
-                            </div>
-                            <div className={styles.bullet} />
-                            <div className={styles.revolt}>
-                                <a
-                                    href="https://revolt.chat/about"
-                                    target="_blank"
-                                    rel="noreferrer">
-                                    <Text id="general.about" />
-                                </a>
-                                <a
-                                    href="https://revolt.chat/terms"
-                                    target="_blank"
-                                    rel="noreferrer">
-                                    <Text id="general.tos" />
-                                </a>
-                                <a
-                                    href="https://revolt.chat/privacy"
-                                    target="_blank"
-                                    rel="noreferrer">
-                                    <Text id="general.privacy" />
-                                </a>
                             </div>
                         </div>
-                        <a
-                            className={styles.attribution}
-                            href="https://unsplash.com/@fakurian"
-                            target="_blank"
-                            rel="noreferrer">
-                            <Text id="general.image_by" /> &lrm;@fakurian &rlm;·
-                            unsplash.com
-                        </a>
                     </div>
                 </div>
             </div>

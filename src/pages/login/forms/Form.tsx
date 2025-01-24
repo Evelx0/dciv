@@ -161,7 +161,7 @@ export const Form = observer(({ page, callback }: Props) => {
                         id={
                             page === "create"
                                 ? "login.subtitle2"
-                                : "login.subtitle"
+                                : ""
                         }
                     />
                     <div>(app.revolt.chat)</div>
