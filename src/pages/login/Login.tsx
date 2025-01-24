@@ -97,12 +97,6 @@ export default observer(() => {
                     <div className={styles.bottom}>
                         <div className={styles.links}>
                             <div className={styles.socials}>
-                                <a
-                                    href="https://github.com/revoltchat"
-                                    target="_blank"
-                                    rel="noreferrer">
-                                    <Github size={24} />
-                                </a>
                             </div>
                         </div>
                     </div>
