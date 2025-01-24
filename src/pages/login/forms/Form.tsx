@@ -235,7 +235,7 @@ export const Form = observer(({ page, callback }: Props) => {
             {page === "login" && (
                 <>
                     <span className={styles.create}>
-                        <Text id="login.new" />{" "}
+                        <Text id="New to DarkCiv?" />{" "}
                         <Link to="/login/create">
                             <Text id="login.create" />
                         </Link>
@@ -255,18 +255,6 @@ export const Form = observer(({ page, callback }: Props) => {
                     {!IS_REVOLT && (
                         <>
                             <br />
-                            <Tip palette="primary">
-                                <span>
-                                    <Text id="login.unofficial_instance" />{" "}
-                                    <a
-                                        href="https://developers.revolt.chat/faq.html"
-                                        style={{ color: "var(--accent)" }}
-                                        target="_blank"
-                                        rel="noreferrer">
-                                        <Text id="general.learn_more" />
-                                    </a>
-                                </span>
-                            </Tip>
                         </>
                     )}
                 </>
