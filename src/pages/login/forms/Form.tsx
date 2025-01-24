@@ -235,7 +235,7 @@ export const Form = observer(({ page, callback }: Props) => {
             {page === "login" && (
                 <>
                     <span className={styles.create}>
-                        <Text id="New to DarkCiv?" />{" "}
+                        <Text id="">New to DarkCiv?</Text>{" "}
                         <Link to="/login/create">
                             <Text id="login.create" />
                         </Link>
