@@ -202,15 +202,10 @@ export default observer(() => {
                 },
                 {
                     divider: true,
-                    category: "revolt",
+                    category: "DarkCiv",
                     id: "bots",
                     icon: <Bot size={20} />,
                     title: <Text id="app.settings.pages.bots.title" />,
-                },
-                {
-                    id: "feedback",
-                    icon: <Megaphone size={20} />,
-                    title: <Text id="app.settings.pages.feedback.title" />,
                 },
             ]}
             children={
@@ -263,32 +258,6 @@ export default observer(() => {
             category="pages"
             custom={
                 <>
-                    <ButtonItem
-                        compact
-                        onClick={() =>
-                            modalController.push({ type: "changelog" })
-                        }>
-                        <ListUl size={20} />
-                        <Text id="app.special.modals.changelogs.title" />
-                    </ButtonItem>
-                    <a
-                        href="https://github.com/revoltchat"
-                        target="_blank"
-                        rel="noreferrer">
-                        <ButtonItem compact>
-                            <Github size={20} />
-                            <Text id="app.settings.pages.source_code" />
-                        </ButtonItem>
-                    </a>
-                    <a
-                        href="https://wiki.revolt.chat/notes/project/financial-support/"
-                        target="_blank"
-                        rel="noreferrer">
-                        <ButtonItem className={styles.donate} compact>
-                            <Coffee size={20} />
-                            <Text id="app.settings.pages.donate.title" />
-                        </ButtonItem>
-                    </a>
                     <LineDivider compact />
                     <ButtonItem
                         onClick={clientController.logoutCurrent}
@@ -298,36 +267,6 @@ export default observer(() => {
                         <Text id="app.settings.pages.logOut" />
                     </ButtonItem>
                     <div className={styles.version}>
-                        <span className={styles.revision}>
-                            <a
-                                href={`${REPO_URL}/${GIT_REVISION}`}
-                                target="_blank"
-                                rel="noreferrer">
-                                {GIT_REVISION.substr(0, 7)}
-                            </a>
-                            {` `}
-                            <a
-                                href={
-                                    GIT_BRANCH !== "DETACHED"
-                                        ? `https://github.com/revoltchat/revite/tree/${GIT_BRANCH}`
-                                        : undefined
-                                }
-                                target="_blank"
-                                rel="noreferrer">
-                                ({GIT_BRANCH})
-                            </a>
-                        </span>
-                        <span>
-                            {GIT_BRANCH === "production" ? "Stable" : "Nightly"}{" "}
-                            {APP_VERSION}
-                        </span>
-                        {window.isNative && (
-                            <span>Native: {window.nativeVersion}</span>
-                        )}
-                        <span>
-                            API: {client.configuration?.revolt ?? "N/A"}
-                        </span>
-                        <span>revolt.js: {LIBRARY_VERSION}</span>
                     </div>
                 </>
             }
