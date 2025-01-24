@@ -112,27 +112,27 @@ export default observer(() => {
                         <div className={styles.actions}>
 
                             {client.servers.get(
-                                "01F7ZSBSFHQ8TA81725KQCSDDP",
+                                "01JJCAQP0F80B4STZ4QT640AAB",
                             ) ? (
-                                <Link to="/server/01F7ZSBSFHQ8TA81725KQCSDDP">
+                                <Link to="/server/01JJCAQP0F80B4STZ4QT640AAB">
                                     <CategoryButton
                                         action="chevron"
                                         icon={<RightArrowCircle size={32} />}
                                         description={
-                                            <Text id="">Description of Server</Text>
+                                            <Text id="">DarkCiv Public Chat, anyone can join and partake here!</Text>
                                         }>
-                                        <Text id="">Server Name</Text>
+                                        <Text id="">DarkCiv Public 💬</Text>
                                     </CategoryButton>
                                 </Link>
                             ) : (
-                                <Link to="/invite/Testers">
+                                <Link to="/invite/01JJCAQP0F80B4STZ4QT640AAB">
                                     <CategoryButton
                                         action="chevron"
                                         icon={<Group size={32} />}
                                         description={
-                                            <Text id="">Description of Server</Text>
+                                            <Text id="">DarkCiv Public Chat, anyone can join and partake here!</Text>
                                         }>
-                                        <Text id="">Server Name</Text>
+                                        <Text id="">DarkCiv Public 💬</Text>
                                     </CategoryButton>
                                 </Link>
                             )}
