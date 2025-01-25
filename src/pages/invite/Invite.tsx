@@ -170,9 +170,9 @@ export default function Invite() {
                                 }
                             }}>
                             {!session ? (
-                                <Text id="app.special.invite.login" />
+                                <Text id="">Login to DarkChat</Text>
                             ) : (
-                                <Text id="app.special.invite.accept" />
+                                <Text id="">Join DarkCiv</Text>
                             )}
                         </Button>
                     </>
